@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <!-- Bootstrap Styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/styles/styles.css">
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
 </head>
@@ -13,16 +14,16 @@
 <body>
     <div class="container">
         <h1>Rock Paper Scissors</h1>
-        <div id="welcome-screen">
+        <div id="welcome-screen" style="border:thin">
             <form id="name-form">
                 <div>
                     <label id="username" for="html">Type your name:</label>
                     <input id="username" value="Enter Name Here...">
-                    <button id="start-game-button">Start Game!</button>
+                    <button id="start-game-button" class="btn btn-primary">Start Game!</button>
                 </div>
             </form>
         </div>
-        <div id="game-screen">
+        <div id="game-screen" style="border:thin">
             <div id="score-tally">
                 <p id="score">User: 0 v CPU: 0</p>
             </div>
@@ -35,7 +36,7 @@
                         <option value="Scissors">Scissors</option>
                     </select>
                 </div>
-                <button id="go-button">Go!</button>
+                <button id="go-button" class="btn btn-success">Go!</button>
             </form>
             <p id="game-history"></p>
         </div>
